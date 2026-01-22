@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Career Path Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN PAGE -->
+<section id="loginPage" class="page active">
+  <div class="card">
+    <h1>Career Path </h1>
+    <input type="text" id="username" placeholder="Enter your name">
+    <button onclick="login()">Login</button>
+  </div>
+</section>
+
+<!-- CAREER PAGE -->
+<section id="skillPage" class="page">
+  <div class="card">
+    <h2>Select Career</h2>
+
+    <select id="careerSelect">
+      <option value="">-- Select Career --</option>
+    </select>
+
+    <button onclick="showRoadmap()">Show Roadmap</button>
+  </div>
+</section>
+
+<!-- RESULT PAGE -->
+<section id="resultPage" class="page">
+  <div class="card">
+    <h2>Your Career Roadmap</h2>
+    <div id="resultText"></div>
+
+    <a id="linkedinLink" target="_blank">
+      <button class="linkedin">Search Jobs on LinkedIn</button>
+    </a>
+
+    <button class="back" onclick="goBack()">Go Back</button>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
